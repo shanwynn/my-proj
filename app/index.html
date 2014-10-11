@@ -22,29 +22,20 @@
         <li class="nav-name"><img src="images/signout.png" /></li>
       </ul>
     </nav>
-    <section class='request'>
-      <div class='error'></div>
-      <div class='info'></div>
-    </section>
-
-  <section class='profile'>
-    <header>
-      <h1 id='name'></h1>
-      <div id='avatar'></div>
-    </header>
-    <div class='content'>
-      <a id='link'>Github</a>
-      <p>Location: <span id='location'></span></p>
-      <p>Blog: <span id='blog'></span></p>
-      <p>Email: <span id='email'></span></p>
-    </div>
-  </section>
-    <script type='text/template'>
-      <div class='element'>
-        <p><%= Profile %></p>
-        <p><%= Repo %></p>
+    <img src="<%=avatar_url %>" />
+      <div class="profile-name">
+          <h1><%=name %></h1>
+          <h2><%=login %></h2>
       </div>
-    </script>
+      <div>
+        <ul class="profile-content">
+          <li class="location"><%=location %></li>
+          <li class="mail"><a href="mailto:<%=email %>"><%=email %></a></li>
+          <li class="joined">Joined on <%=created_at %></li>
+        </ul>
+      </div>
+    </section>
+    <script type='text/template'></script>
     <script src='jquery/dist/jquery.js'></script>
     <script src='bower_components/underscore/underscore.js'></script>
     <script src='scripts/main.js'></script>
