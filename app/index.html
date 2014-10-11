@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+     <meta charset="utf-8">
+    <title>shanwynn (Shannon Wynn)</title>
+     <link rel="stylesheet" type="text/css" href="styles/main.css">
+  </head>
+  <body>
+    <nav>
+      <ul>
+      <li class="github-cat"><a href="http://www.github.com"><img src="images/octocat-icon-big.png" /></a></li>
+      </ul>
+      <ul class="nav-bar">
+        <li class="nav-text">Explore</li>
+        <li class="nav-text">Gist</li>
+        <li class="nav-text">Blog</li>
+        <li class="nav-text">Help</li>
+        <li class="nav-name" id="name">shanwynn</li>
+        <li class="nav-name" id="arrow"><img src="images/plus-icon.png" /></li>
+        <li class="nav-name"><img src="images/notification.png" /></li>
+        <li class="nav-name"><img src="images/settings.png" /></li>
+        <li class="nav-name"><img src="images/signout.png" /></li>
+      </ul>
+    </nav>
+    <section class='request'>
+      <div class='error'></div>
+      <div class='info'></div>
+    </section>
+
+  <section class='profile'>
+    <header>
+      <h1 id='name'></h1>
+      <div id='avatar'></div>
+    </header>
+    <div class='content'>
+      <a id='link'>Github</a>
+      <p>Location: <span id='location'></span></p>
+      <p>Blog: <span id='blog'></span></p>
+      <p>Email: <span id='email'></span></p>
+    </div>
+  </section>
+    <script type='text/template'>
+      <div class='element'>
+        <p><%= Profile %></p>
+        <p><%= Repo %></p>
+      </div>
+    </script>
+    <script src='jquery/dist/jquery.js'></script>
+    <script src='bower_components/underscore/underscore.js'></script>
+    <script src='scripts/main.js'></script>
+  </body>
+</html>

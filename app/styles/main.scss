@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+}
+
+body {
+  background: #fff;
+}
+
+nav {
+  font: 1.4 Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: Helvetica, arial, freesans, clean, sans-serif, 'Segoe UI Emoji', 'Segoe UI Symbol';
+  font-weight: bold;
+  font-size: 14px;
+  height: 55px;
+  width: 100%;
+  background: #F5F5F5;
+}
+
+.nav-bar {
+  margin-left: 41%;
+  padding-top: 15px;
+}
+
+.nav-bar-right {
+  margin-left: 61%;
+  margin-top: 0;
+  padding-top: 0;
+  width: 50%;
+}
+
+.nav-text {
+  display: inline-block;
+  list-style-type: none;
+  margin-left: 2%;
+}
+
+#name::before {
+  content: url('../images/avatar-small.png');
+}
+
+#arrow::after {
+  content: url('../images/arrow-down.png');
+}
+
+.nav-name {
+  display: inline-block;
+  list-style-type: none;
+  margin-left: 2%;
+}
+
+.github-cat {
+  float: left;
+  list-style-type: none;
+  margin-left: 13%;
+  padding: 11px;
+
+}
