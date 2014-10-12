@@ -9,7 +9,8 @@
   padding-top: 20px; }
 
 body {
-  background: #fff; }
+  background: #fff;
+  width: 100%; }
 
 #contributions::before {
   content: url('../images/contributions.png');
@@ -53,9 +54,10 @@ footer {
 .footer-wrapper {
   display: inline-block;
   margin-left: 12%;
+  margin-right: 12%;
   margin-top: 40%;
   border-top: 1px solid #F8F8F8;
-  width: 99%; }
+  width: 70%; }
 
 .github-cat {
   float: left;
@@ -151,7 +153,8 @@ nav {
   font-size: 17px;
   color: #666666;
   list-style-type: none;
-  margin-left: 30%; }
+  margin-left: 30%;
+  margin-right: 0; }
 
 .repo-tabs {
   font-family: Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
