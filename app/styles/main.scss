@@ -8,6 +8,11 @@ body {
   background: #fff;
 }
 
+#contributions::before {
+  content: url('../images/contributions.png');
+  padding: 5px;
+}
+
 nav {
   font-family: $font-main;
   font-weight: bold;
@@ -19,7 +24,8 @@ nav {
 
 .nav-bar {
   margin-left: 41%;
-  padding-top: 15px;
+  padding-top: 0;
+  width: 42%;
 }
 
 .nav-bar-right {
@@ -33,10 +39,12 @@ nav {
   display: inline-block;
   list-style-type: none;
   margin-left: 2%;
+  margin-top: 0%;
 }
 
 #name::before {
   content: url('../images/avatar-small.png');
+  padding: 5px;
 }
 
 #arrow::after {
@@ -44,17 +52,16 @@ nav {
 }
 
 .nav-name {
-  display: inline-block;
+  float: right;
   list-style-type: none;
-  margin-left: 2%;
+  margin-right: 3%;
 }
 
 .github-cat {
   float: left;
   list-style-type: none;
   margin-left: 13%;
-  padding: 11px;
-
+  padding: 10px;
 }
 
 .profile-name {
@@ -64,5 +71,70 @@ nav {
   display: block;
   overflow: hidden;
   width: 100%;
+}
 
+#public-activity::before {
+  content: url('../images/activity.png');
+  padding: 5px;
+}
+
+.repo-nav {
+  font-family: $font-main;
+  font-size: 17px;
+  color: #666666;
+  list-style-type: none;
+  margin-left: 30%;
+}
+
+.repo {
+  display: inline-block;
+  margin-top: 2%;
+  margin-left: 0;
+  padding: 10px;
+}
+
+#repositories::before {
+  content: url('../images/book-icon.png');
+  padding: 5px;
+}
+
+.search-bar {
+  display: inline-block;
+  width: 250px;
+  height: 30px;
+  font-family: $font-main;
+  font-size: 14px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  padding-left: 10px;
+  margin-left: 30%;
+  margin-top: 1%;
+}
+
+.search-github {
+  display: inline-block;
+  width: 350px;
+  height: 30px;
+  font-family: $font-main;
+  font-size: 14px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  padding-left: 10px;
+  margin-left: 0;
+  margin-top: 10px;
+}
+
+.search-button {
+  display: inline-block;
+  height: 30px;
+  width: 65px;
+  background: linear-gradient(to bottom, #F5F5F5 0, #F0F0F0 100%);
+  font-family: $font-main;
+  font-size: 13px;
+  text-align: center;
+  margin-left: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  line-height: 30px;
+  font-weight: bold;
 }

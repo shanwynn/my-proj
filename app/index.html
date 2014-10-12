@@ -9,19 +9,31 @@
     <nav>
       <ul>
       <li class="github-cat"><a href="http://www.github.com"><img src="images/octocat-icon-big.png" /></a></li>
+      <input class="search-github" placeholder="Search GitHub">
       </ul>
       <ul class="nav-bar">
         <li class="nav-text">Explore</li>
         <li class="nav-text">Gist</li>
         <li class="nav-text">Blog</li>
         <li class="nav-text">Help</li>
-        <li class="nav-name" id="name">shanwynn</li>
-        <li class="nav-name" id="arrow"><img src="images/plus-icon.png" /></li>
-        <li class="nav-name"><img src="images/notification.png" /></li>
-        <li class="nav-name"><img src="images/settings.png" /></li>
         <li class="nav-name"><img src="images/signout.png" /></li>
+        <li class="nav-name"><img src="images/settings.png" /></li>
+        <li class="nav-name"><img src="images/notification.png" /></li>
+        <li class="nav-name" id="arrow"><img src="images/plus-icon.png" /></li>
+        <li class="nav-name" id="name">shanwynn</li>
       </ul>
     </nav>
+    <div>
+      <ul class="repo-nav">
+        <li class="repo" id="contributions">Contributions</li>
+        <li class="repo" id="repositories">Repositories</li>
+        <li class="repo" id="public-activity">Public Activity</li>
+      </ul>
+    </div>
+    <div class="search-repo">
+      <input class="search-bar" placeholder="Find a repository...">
+      <div class="search-button">Search</div>
+    </div>
     <img src="<%=avatar_url %>" />
       <div class="profile-name">
           <h1><%=name %></h1>
