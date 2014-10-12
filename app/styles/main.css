@@ -1,12 +1,73 @@
 * {
   margin: 0; }
 
+.about-footer {
+  float: left;
+  font-family: Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 13px;
+  padding: 5px;
+  padding-top: 20px; }
+
 body {
   background: #fff; }
 
 #contributions::before {
   content: url('../images/contributions.png');
   padding: 5px; }
+
+.copyright {
+  float: left;
+  font-family: Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 13px;
+  padding: 5px;
+  padding-top: 20px; }
+
+.edit-button {
+  float: right;
+  height: 18px;
+  width: 100px;
+  background: linear-gradient(to bottom, #F5F5F5 0, #F0F0F0 100%);
+  font-family: Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 13px;
+  text-align: left;
+  margin-right: 25%;
+  margin-top: 2%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  line-height: 30px;
+  font-weight: bold;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 10px; }
+
+.edit-button::before {
+  content: url('../images/edit.png');
+  margin-left: 3px; }
+
+footer {
+  margin-bottom: 2%;
+  width: 99%;
+  margin-right: auto;
+  margin-left: auto; }
+
+.footer-wrapper {
+  display: inline-block;
+  margin-left: 12%;
+  margin-top: 40%;
+  border-top: 1px solid #F8F8F8;
+  width: 99%; }
+
+.github-cat {
+  float: left;
+  margin-left: 0%;
+  padding: 10px; }
+
+#gray-cat {
+  margin-left: 10%;
+  margin-right: 10%; }
+
+li {
+  list-style-type: none; }
 
 nav {
   font-family: Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
@@ -17,9 +78,10 @@ nav {
   background: #F5F5F5; }
 
 .nav-bar {
-  margin-left: 41%;
+  display: inline-block;
+  margin-left: 13%;
   padding-top: 0;
-  width: 42%; }
+  width: 62%; }
 
 .nav-bar-right {
   margin-left: 61%;
@@ -29,7 +91,6 @@ nav {
 
 .nav-text {
   display: inline-block;
-  list-style-type: none;
   margin-left: 2%;
   margin-top: 0%; }
 
@@ -42,14 +103,36 @@ nav {
 
 .nav-name {
   float: right;
-  list-style-type: none;
-  margin-right: 3%; }
+  margin-left: 2%;
+  margin-right: -3%;
+  padding: 12px;
+  padding-left: -12px;
+  padding-right: 12px; }
 
-.github-cat {
-  float: left;
-  list-style-type: none;
-  margin-left: 13%;
-  padding: 10px; }
+.new-button {
+  float: right;
+  height: 25px;
+  width: 65px;
+  background: linear-gradient(to bottom, #8ADD6D 0, #569E3D 100%);
+  font-family: Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 13px;
+  color: #fff;
+  text-align: left;
+  margin-left: 1%;
+  margin-right: 21%;
+  margin-top: -1%;
+  border: 1px solid #5CA941;
+  border-radius: 4px;
+  line-height: 30px;
+  font-weight: bold;
+  padding-top: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 5px; }
+
+.new-button::before {
+  content: url('../images/newrepo-button.png');
+  margin-right: 5px; }
 
 .profile-name {
   font-family: Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
@@ -69,6 +152,11 @@ nav {
   color: #666666;
   list-style-type: none;
   margin-left: 30%; }
+
+.repo-tabs {
+  font-family: Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  margin-right: -5%;
+  margin-top: -1.5%; }
 
 .repo {
   display: inline-block;
@@ -117,3 +205,7 @@ nav {
   border-radius: 4px;
   line-height: 30px;
   font-weight: bold; }
+
+.tab {
+  float: right;
+  margin-left: 1%; }

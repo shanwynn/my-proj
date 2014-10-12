@@ -7,11 +7,9 @@
   </head>
   <body>
     <nav>
-      <ul>
-      <li class="github-cat"><a href="http://www.github.com"><img src="images/octocat-icon-big.png" /></a></li>
-      <input class="search-github" placeholder="Search GitHub">
-      </ul>
       <ul class="nav-bar">
+        <li class="github-cat"><a href="http://www.github.com"><img src="images/octocat-icon-big.png" /></a></li>
+        <input class="search-github" placeholder="Search GitHub">
         <li class="nav-text">Explore</li>
         <li class="nav-text">Gist</li>
         <li class="nav-text">Blog</li>
@@ -28,11 +26,21 @@
         <li class="repo" id="contributions">Contributions</li>
         <li class="repo" id="repositories">Repositories</li>
         <li class="repo" id="public-activity">Public Activity</li>
+        <li class="edit-button">Edit Profile</li>
       </ul>
     </div>
     <div class="search-repo">
       <input class="search-bar" placeholder="Find a repository...">
       <div class="search-button">Search</div>
+        <ul class="repo-tabs">
+          <li class="new-button">New</li>
+          <li class="tab">Mirrors</li>
+          <li class="tab">Forks</li>
+          <li class="tab">Sources</li>
+          <li class="tab">Private</li>
+          <li class="tab">Public</li>
+          <li class="tab">All</li>
+        </ul>
     </div>
     <img src="<%=avatar_url %>" />
       <div class="profile-name">
@@ -47,6 +55,22 @@
         </ul>
       </div>
     </section>
+    <footer>
+      <ul class=footer-wrapper>
+        <li class="copyright">&copy; 2014 GitHub, Inc.</li>
+        <li class="copyright">Terms</li>
+        <li class="copyright">Privacy</li>
+        <li class="copyright">Security</li>
+        <li class="copyright">Contact</li>
+        <li class="copyright" id="gray-cat"><img src="images/octocat-icon-gray.png" /></li>
+        <li class="about-footer">Status</li>
+        <li class="about-footer">API</li>
+        <li class="about-footer">Training</li>
+        <li class="about-footer">Shop</li>
+        <li class="about-footer">Blog</li>
+        <li class="about-footer">About</li>
+      </ul>
+    </footer>
     <script type='text/template'></script>
     <script src='jquery/dist/jquery.js'></script>
     <script src='bower_components/underscore/underscore.js'></script>
