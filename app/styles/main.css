@@ -8,6 +8,9 @@
   padding: 5px;
   padding-top: 20px; }
 
+.avatar {
+  margin-left: 5%; }
+
 body {
   background: #fff;
   width: 100%; }
@@ -55,7 +58,7 @@ footer {
   display: inline-block;
   margin-left: 12%;
   margin-right: 12%;
-  margin-top: 40%;
+  margin-top: 30%;
   border-top: 1px solid #F8F8F8;
   width: 70%; }
 
@@ -136,12 +139,17 @@ nav {
   content: url('../images/newrepo-button.png');
   margin-right: 5px; }
 
+.profile-content {
+  margin: 2%;
+  font-family: Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 15px; }
+
 .profile-name {
+  margin: 2%;
   font-family: Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: bold;
   font-size: 20px;
   display: block;
-  overflow: hidden;
   width: 100%; }
 
 #public-activity::before {

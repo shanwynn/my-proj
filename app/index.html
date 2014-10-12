@@ -42,7 +42,9 @@
           <li class="tab">All</li>
         </ul>
     </div>
-    <img src="<%=avatar_url %>" />
+    <div id="profileContainer"></div>
+    <script id="profileTemplate" type="text/template">
+    <img class= "avatar" src="<%=avatar_url %>" />
       <div class="profile-name">
           <h1><%=name %></h1>
           <h2><%=login %></h2>
@@ -53,6 +55,7 @@
           <li class="mail"><a href="mailto:<%=email %>"><%=email %></a></li>
           <li class="joined">Joined on <%=created_at %></li>
         </ul>
+      </script>
       </div>
     </section>
     <footer>
@@ -73,7 +76,7 @@
     </footer>
     <script type='text/template'></script>
     <script src='jquery/dist/jquery.js'></script>
-    <script src='bower_components/underscore/underscore.js'></script>
+    <script src='underscore/underscore.js'></script>
     <script src='scripts/main.js'></script>
   </body>
 </html>
