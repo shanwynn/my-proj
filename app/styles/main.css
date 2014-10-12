@@ -8,14 +8,19 @@
   padding: 5px;
   padding-top: 20px; }
 
-.avatar {
+.active {
+  border: 1px solid #dddddd;
+  border-bottom: 1px solid #fff;
+  border-radius: 10px 10px 0px 0px; }
+
+#avatar {
   margin-left: 5%; }
 
 body {
   background: #fff;
   width: 100%; }
 
-#contributions::before {
+.repo_1::before {
   content: url('../images/contributions.png');
   padding: 5px; }
 
@@ -152,7 +157,7 @@ nav {
   display: block;
   width: 100%; }
 
-#public-activity::before {
+.repo_3::before {
   content: url('../images/activity.png');
   padding: 5px; }
 
@@ -162,20 +167,21 @@ nav {
   color: #666666;
   list-style-type: none;
   margin-left: 30%;
-  margin-right: 0; }
+  margin-right: 0;
+  border-bottom: 1px solid #dddddd; }
 
 .repo-tabs {
   font-family: Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
   margin-right: -5%;
   margin-top: -1.5%; }
 
-.repo {
+.repo_1, .repo_2, .repo_3 {
   display: inline-block;
   margin-top: 2%;
   margin-left: 0;
   padding: 10px; }
 
-#repositories::before {
+.repo_2::before {
   content: url('../images/book-icon.png');
   padding: 5px; }
 
@@ -216,6 +222,9 @@ nav {
   border-radius: 4px;
   line-height: 30px;
   font-weight: bold; }
+
+section {
+  display: none; }
 
 .tab {
   float: right;

@@ -3,6 +3,7 @@
 }
 
 $font-main: Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+$border: 1px solid #dddddd;
 
 .about-footer {
     float: left;
@@ -12,7 +13,12 @@ $font-main: Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Se
     padding-top: 20px;
 }
 
-.avatar {
+.active {
+  border: $border;
+  border-bottom: 1px solid #fff;
+  border-radius: 10px 10px 0px 0px;
+}
+#avatar {
   margin-left: 5%;
 }
 
@@ -21,7 +27,7 @@ body {
   width: 100%;
 }
 
-#contributions::before {
+.repo_1::before {
   content: url('../images/contributions.png');
   padding: 5px;
 }
@@ -177,7 +183,7 @@ nav {
   width: 100%;
 }
 
-#public-activity::before {
+.repo_3::before {
   content: url('../images/activity.png');
   padding: 5px;
 }
@@ -189,6 +195,7 @@ nav {
   list-style-type: none;
   margin-left: 30%;
   margin-right: 0;
+  border-bottom: $border;
 }
 
 .repo-tabs {
@@ -197,14 +204,14 @@ nav {
   margin-top: -1.5%;
 }
 
-.repo {
+.repo_1, .repo_2, .repo_3  {
   display: inline-block;
   margin-top: 2%;
   margin-left: 0;
   padding: 10px;
 }
 
-#repositories::before {
+.repo_2::before {
   content: url('../images/book-icon.png');
   padding: 5px;
 }
@@ -248,6 +255,10 @@ nav {
   border-radius: 4px;
   line-height: 30px;
   font-weight: bold;
+}
+
+section {
+  display: none;
 }
 
 .tab {

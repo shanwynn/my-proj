@@ -23,9 +23,9 @@
     </nav>
     <div>
       <ul class="repo-nav">
-        <li class="repo" id="contributions">Contributions</li>
-        <li class="repo" id="repositories">Repositories</li>
-        <li class="repo" id="public-activity">Public Activity</li>
+        <li class="repo_1" data-target="contributions" id="contributions">Contributions</li>
+        <li class="repo_2 active" data-target="repositories" id="repositories">Repositories</li>
+        <li class="repo_3" data-target="public-activity" id="public-activity">Public Activity</li>
         <li class="edit-button">Edit Profile</li>
       </ul>
     </div>
@@ -44,19 +44,28 @@
     </div>
     <div id="profileContainer"></div>
     <script id="profileTemplate" type="text/template">
-    <img class= "avatar" src="<%=avatar_url %>" />
+    <img id= "avatar" src="<%=avatar_url %>" />
       <div class="profile-name">
-          <h1><%=name %></h1>
-          <h2><%=login %></h2>
+          <h1 class="name"><%=name %></h1>
+          <h2 class="login"><%=login %></h2>
       </div>
       <div>
         <ul class="profile-content">
           <li class="location"><%=location %></li>
           <li class="mail"><a href="mailto:<%=email %>"><%=email %></a></li>
+          <li class="blog"><a href="http://www.shannonwynn.com>"><%=blog %></a></li>
           <li class="joined">Joined on <%=created_at %></li>
         </ul>
       </script>
       </div>
+  <section id="contributions" class="active">
+      <div class="content"></div>
+    </section>
+    <section id="repositories">
+      <div class="content"></div>
+    </section>
+      <section id="public-activity">
+        <div class="content"></div>
     </section>
     <footer>
       <ul class=footer-wrapper>
