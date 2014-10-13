@@ -18,6 +18,11 @@ $border: 1px solid #dddddd;
   border-bottom: 1px solid #fff;
   border-radius: 10px 10px 0px 0px;
 }
+
+#arrow::after {
+  content: url('../images/arrow-down.png');
+}
+
 #avatar {
   margin-left: 5%;
 }
@@ -29,11 +34,6 @@ $border: 1px solid #dddddd;
 body {
   background: #fff;
   width: 100%;
-}
-
-.repo_1::before {
-  content: url('../images/contributions.png');
-  padding: 5px;
 }
 
 .copyright {
@@ -119,6 +119,11 @@ li {
   margin-left: 5%;
 }
 
+#name::before {
+  content: url('../images/avatar-small.png');
+  padding: 5px;
+}
+
 nav {
   font-family: $font-main;
   font-weight: bold;
@@ -142,21 +147,6 @@ nav {
   width: 50%;
 }
 
-.nav-text {
-  display: inline-block;
-  margin-left: 2%;
-  margin-top: 0%;
-}
-
-#name::before {
-  content: url('../images/avatar-small.png');
-  padding: 5px;
-}
-
-#arrow::after {
-  content: url('../images/arrow-down.png');
-}
-
 .nav-name {
   float: right;
   margin-left: 2%;
@@ -164,6 +154,12 @@ nav {
   padding: 12px;
   padding-left: -12px;
   padding-right: 12px;
+}
+
+.nav-text {
+  display: inline-block;
+  margin-left: 2%;
+  margin-top: 0%;
 }
 
 .new-button {
@@ -204,6 +200,7 @@ nav {
   font-family: $font-main;
   font-size: 15px;
 }
+
 .profile-name {
   margin: 2%;
   font-family: $font-main;
@@ -211,11 +208,6 @@ nav {
   font-size: 20px;
   display: block;
   width: 100%;
-}
-
-.repo_3::before {
-  content: url('../images/activity.png');
-  padding: 5px;
 }
 
 .repo-nav {
@@ -241,8 +233,18 @@ nav {
   padding: 10px;
 }
 
+.repo_1::before {
+  content: url('../images/contributions.png');
+  padding: 5px;
+}
+
 .repo_2::before {
   content: url('../images/book-icon.png');
+  padding: 5px;
+}
+
+.repo_3::before {
+  content: url('../images/activity.png');
   padding: 5px;
 }
 
@@ -259,19 +261,6 @@ nav {
   margin-top: 1%;
 }
 
-.search-github {
-  display: inline-block;
-  width: 350px;
-  height: 30px;
-  font-family: $font-main;
-  font-size: 14px;
-  border-radius: 4px;
-  border: 1px solid #ddd;
-  padding-left: 10px;
-  margin-left: 0;
-  margin-top: 10px;
-}
-
 .search-button {
   display: inline-block;
   height: 30px;
@@ -285,6 +274,19 @@ nav {
   border-radius: 4px;
   line-height: 30px;
   font-weight: bold;
+}
+
+.search-github {
+  display: inline-block;
+  width: 350px;
+  height: 30px;
+  font-family: $font-main;
+  font-size: 14px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  padding-left: 10px;
+  margin-left: 0;
+  margin-top: 10px;
 }
 
 section {

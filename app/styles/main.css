@@ -13,6 +13,9 @@
   border-bottom: 1px solid #fff;
   border-radius: 10px 10px 0px 0px; }
 
+#arrow::after {
+  content: url('../images/arrow-down.png'); }
+
 #avatar {
   margin-left: 5%; }
 
@@ -22,10 +25,6 @@
 body {
   background: #fff;
   width: 100%; }
-
-.repo_1::before {
-  content: url('../images/contributions.png');
-  padding: 5px; }
 
 .copyright {
   float: left;
@@ -98,6 +97,10 @@ li {
   font-weight: normal;
   margin-left: 5%; }
 
+#name::before {
+  content: url('../images/avatar-small.png');
+  padding: 5px; }
+
 nav {
   font-family: Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: bold;
@@ -118,18 +121,6 @@ nav {
   padding-top: 0;
   width: 50%; }
 
-.nav-text {
-  display: inline-block;
-  margin-left: 2%;
-  margin-top: 0%; }
-
-#name::before {
-  content: url('../images/avatar-small.png');
-  padding: 5px; }
-
-#arrow::after {
-  content: url('../images/arrow-down.png'); }
-
 .nav-name {
   float: right;
   margin-left: 2%;
@@ -137,6 +128,11 @@ nav {
   padding: 12px;
   padding-left: -12px;
   padding-right: 12px; }
+
+.nav-text {
+  display: inline-block;
+  margin-left: 2%;
+  margin-top: 0%; }
 
 .new-button {
   float: right;
@@ -181,10 +177,6 @@ nav {
   display: block;
   width: 100%; }
 
-.repo_3::before {
-  content: url('../images/activity.png');
-  padding: 5px; }
-
 .repo-nav {
   font-family: Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 17px;
@@ -205,8 +197,16 @@ nav {
   margin-left: 0;
   padding: 10px; }
 
+.repo_1::before {
+  content: url('../images/contributions.png');
+  padding: 5px; }
+
 .repo_2::before {
   content: url('../images/book-icon.png');
+  padding: 5px; }
+
+.repo_3::before {
+  content: url('../images/activity.png');
   padding: 5px; }
 
 .search-bar {
@@ -221,18 +221,6 @@ nav {
   margin-left: 30%;
   margin-top: 1%; }
 
-.search-github {
-  display: inline-block;
-  width: 350px;
-  height: 30px;
-  font-family: Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 14px;
-  border-radius: 4px;
-  border: 1px solid #ddd;
-  padding-left: 10px;
-  margin-left: 0;
-  margin-top: 10px; }
-
 .search-button {
   display: inline-block;
   height: 30px;
@@ -246,6 +234,18 @@ nav {
   border-radius: 4px;
   line-height: 30px;
   font-weight: bold; }
+
+.search-github {
+  display: inline-block;
+  width: 350px;
+  height: 30px;
+  font-family: Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 14px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  padding-left: 10px;
+  margin-left: 0;
+  margin-top: 10px; }
 
 section {
   display: none; }
