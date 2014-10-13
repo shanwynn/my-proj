@@ -43,18 +43,20 @@
         </ul>
     </div>
     <div id="profileContainer"></div>
-    <script id="profileTemplate" type="text/template">
-    <img id= "avatar" src="<%=avatar_url %>" />
-      <div class="profile-name">
-          <h1 class="name"><%=name %></h1>
-          <h2 class="login"><%=login %></h2>
+    <!--<script id="profileTemplate" type="text/template">-->
+    <div id="avatar"></div>
+      <div class="profile-name"></div>
+    <div>
+      <div>
+          <h1 id="owner">Shannon Wynn</h1>
+          <h2 id="login">shanwynn</h2>
       </div>
       <div>
         <ul class="profile-content">
-          <li class="location"><%=location %></li>
-          <li class="mail"><a href="mailto:<%=email %>"><%=email %></a></li>
-          <li class="blog"><a href="http://www.shannonwynn.com>"><%=blog %></a></li>
-          <li class="joined">Joined on <%=created_at %></li>
+          <li id="location"></li>
+          <li id="email"></li>
+          <li id="blog"></li>
+          <li id="joined">Joined on <time class="join-date" datetime="2013-10-01T19:00:10Z" day="numeric" is="local-time" month="short" year="numeric" title="Oct 1, 2013, 3:00 PM EDT">Oct 1, 2013</time></li>
         </ul>
       </script>
       </div>

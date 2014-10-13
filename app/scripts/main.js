@@ -32,26 +32,25 @@ profile and repo information, create templates (<%    %>) in HTML where I'll put
   "created_at": "2013-10-01T19:00:10Z",
   "updated_at": "2014-10-12T17:36:04Z"
 };*/
-/* api call */
-var API_URL = 'https://api.github.com/users/shanwynn';
+/* api call
+var API_URL = 'https://api.github.com/users/shanwynn';*/
 
-var withGetJSON = function () {
-  $.getJSON(API_URL, function (data) {
+var seeProfile = function () {
+  $.getJSON('https://api.github.com/users/shanwynn', function (data) {
     $('.info').html(JSON.stringify(data));
     setProfileInfo(data);
   });
 };
 
 var setProfileInfo = function (profileData) {
-  $('.name').text(profileData.login);
-  $('.avatar').html("<img src='" + profileData.avatar_url + "'/>");
-  $('.location').text(profileData.location);
-  $('.link').prop('href', profileData.html_url);
-
-  $('.blog').html("<a href='" + profileData.blog + "'>" + profileData.blog + "</a>");
-  $('.email').text(profileData.email);
+  $('#name').text(profileData.login);
+  $('#avatar').html("<img src='" + profileData.avatar_url + "'/>");
+  $('#location').text(profileData.location);
+  $('#blog').html("<a href='" + profileData.blog + "'>" + profileData.blog + "</a>");
+  $('#email').text(profileData.email);
+  $('#joined').text(profileData.joined);
 };
- withGetJSON();
+ seeProfile();
 
 /* target ids*/
 $('li').on('click', function (event) {

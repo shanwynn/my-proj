@@ -22,6 +22,10 @@ $border: 1px solid #dddddd;
   margin-left: 5%;
 }
 
+#blog::before {
+  content: url('../images/blog.png');
+}
+
 body {
   background: #fff;
   width: 100%;
@@ -64,6 +68,10 @@ body {
   margin-left: 3px;
 }
 
+#email::before {
+  content: url('../images/maillogo.png');
+}
+
 footer {
   margin-bottom: 2%;
   width: 99%;
@@ -91,8 +99,24 @@ footer {
   margin-right: 10%;
 }
 
+#joined::before {
+  content: url('../images/clocklogo.png');
+}
+
 li {
   list-style-type: none;
+}
+
+#location::before {
+  content: url('../images/mapdot.png');
+}
+
+#login {
+  font-family: $font-main;
+  font-size: 20px;
+  color: #666674;
+  font-weight: normal;
+  margin-left: 5%;
 }
 
 nav {
@@ -167,6 +191,12 @@ nav {
 .new-button::before {
   content: url('../images/newrepo-button.png');
   margin-right: 5px;
+}
+
+#owner {
+  font-family: $font-main;
+  font-size: 26px;
+  margin-left: 5%;
 }
 
 .profile-content {
