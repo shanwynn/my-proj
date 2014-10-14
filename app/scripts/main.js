@@ -22,7 +22,7 @@ var setProfileTemplate = function (profileData) {
   var profileTemplate = _.template($("#profileTemplate").html());
   var compiledTemplate = profileTemplate(profileData);
   $("#profileContainer").html(compiledTemplate);
-}
+};
  seeProfile();
 
  var seeRepo = function () {
@@ -37,9 +37,10 @@ var setProfileTemplate = function (profileData) {
      var repoTemplateString = $('.repo-template').html();
      var repoTemplate=_.template(repoTemplateString);
      var compiledRepoTemplate = repoTemplate(repo);
-     $('.repo-list').append(compiledRepoTemplate);
+     $(".repo-container").html(compiledTemplate);
+     $(".repo-list").append(compiledRepoTemplate);
    });
- }
+ };
 
 /* var repoProfile = function () {
    $.getJSON('https://api.github.com/users/shanwynn/repos', function (data) {
