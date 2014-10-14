@@ -5,7 +5,7 @@ profile and repo information, create templates (<%    %>) in HTML where I'll put
 var seeProfile = function () {
   $.getJSON('https://api.github.com/users/shanwynn', function (data) {
     $('.info').html(JSON.stringify(data));
-    setProfileInfo(data);
+    setProfileTemplate(data);
   });
 };
 
@@ -18,7 +18,28 @@ var setProfileInfo = function (profileData) {
   $('#joined').text(profileData.joined);
 };
 
+var setProfileTemplate = function (profileData) {
+  var profileTemplate = _.template($("#profileTemplate").html());
+  var compiledTemplate = profileTemplate(profileData);
+  $("#profileContainer").html(compiledTemplate);
+}
  seeProfile();
+
+ var seeRepo = function () {
+   $.getJSON('https://api.github.com/users/shanwynn/repos', function (data) {
+     $('.info').html(JSON.stringify(data));
+     setRepoTemplate(data);
+   });
+ };
+
+ var setRepoTemplate = function (data) {
+   _.each(data, function (repo) {
+     var repoTemplateString = $('.repo-template').html();
+     var repoTemplate=_.template(repoTemplateString);
+     var compiledRepoTemplate = repoTemplate(repo);
+     $('.repo-list').append(compiledRepoTemplate);
+   });
+ }
 
 /* var repoProfile = function () {
    $.getJSON('https://api.github.com/users/shanwynn/repos', function (data) {

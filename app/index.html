@@ -42,30 +42,74 @@
         <li class="tab">All</li>
         </ul>
     </div>
+    <div class="repo-container">
+      <script id="repoTemplate" type="text/template">
+      <div class="repo-name">
+        <h2><a href="<%=html_url %>"><%=name %></a></h2></div>
+          <ul class="stats">
+            <li class="repo-language"><%=language %></li>
+            <li class="stargazers"><%=stargazers_count %></li>
+            <li class="branches"><%=forks_count %></li>
+          </ul>
+        <div class="repo-description"><%=description %></div>
+        <div class="repo-last-updated">Last updated <%=updated_at %></div>
+      </div>
+      </script>
     <div id="profileContainer"></div>
-    <!--<script id="profileTemplate" type="text/template">-->
-    <div id="avatar"></div>
+    <script id="profileTemplate" type="text/template">
+    <div id="avatar"><img src="<%= avatar_url %>"/></div>
     <div class="profile-name"></div>
     <div>
         <h1 id="owner">Shannon Wynn</h1>
-        <h2 id="login">shanwynn</h2>
+        <h2 id="login"><%= login %></h2>
     </div>
     <div>
       <ul class="profile-content">
-        <li id="location"></li>
-        <li id="email"></li>
-        <li id="blog"></li>
+        <li id="location"><%= location %></li>
+        <li id="email"><%= email %></li>
+        <li id="blog"><%= blog %></li>
         <li id="joined">Joined on <time class="join-date" datetime="2013-10-01T19:00:10Z"
           day="numeric" is="local-time" month="short" year="numeric" title="Oct 1, 2013, 3:00 PM EDT">
           Oct 1, 2013</time></li>
       </ul>
     </div>
-    <!--</script>-->
-    <section id="contributions" class="active">
+    <ul class="profile-stats">
+      <a href="https://github.com/<%= login %>/followers">
+        <li class="followers">
+          <div class="stats"><%= followers %></div>
+          Followers
+        </li>
+      </a>
+      <a href="https://github.com/stars/<%= login %>">
+        <li class="followers">
+          <div class="stats">0</div>
+          Starred
+        </li>
+      </a>
+      <a href="https://github.com/<%= login %>/followers">
+        <li class="followers">
+          <div class="stats"><%= following %></div>
+          Following
+        </li>
+      </a>
+    </ul>
+    </script>
+    <section id="contributions">
       <div class="content"></div>
     </section>
-    <section id="repositories">
+    <section id="repositories" class="active">
       <div class="content"></div>
+      <div class="repo-container">
+        <div class="repo-name">
+          <h2><a href="<%=html_url %>"><%=name %></a></h2></div>
+            <ul class="stats">
+              <li class="repo-language"><%=language %></li>
+              <li class="stargazers"><%=stargazers_count %></li>
+              <li class="branches"><%=forks_count %></li>
+            </ul>
+          <div class="repo-description"><%=description %></div>
+          <div class="repo-last-updated">Last updated <%=updated_at %></div>
+        </div>
     </section>
       <section id="public-activity">
         <div class="content"></div>

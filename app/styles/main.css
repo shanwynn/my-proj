@@ -18,8 +18,12 @@
 
 #avatar {
   margin-left: 5%; }
+  #avatar img {
+    border-radius: 6px;
+    height: 237px; }
 
 #blog::before {
+  margin: 5px;
   content: url('../images/blog.png'); }
 
 body {
@@ -56,13 +60,19 @@ body {
   margin-left: 3px; }
 
 #email::before {
+  margin: 5px;
   content: url('../images/maillogo.png'); }
+
+.followers {
+  margin: 1.5%;
+  display: inline-block;
+  text-align: center; }
 
 footer {
   margin-bottom: 2%;
   width: 99%;
   margin-right: auto;
-  margin-left: auto; }
+  margin-left: -30%; }
 
 .footer-wrapper {
   display: inline-block;
@@ -70,7 +80,7 @@ footer {
   margin-right: 12%;
   margin-top: 30%;
   border-top: 1px solid #F8F8F8;
-  width: 70%; }
+  width: 90%; }
 
 .github-cat {
   float: left;
@@ -82,12 +92,14 @@ footer {
   margin-right: 10%; }
 
 #joined::before {
+  margin: 5px;
   content: url('../images/clocklogo.png'); }
 
 li {
   list-style-type: none; }
 
 #location::before {
+  margin: 5px;
   content: url('../images/mapdot.png'); }
 
 #login {
@@ -164,7 +176,12 @@ nav {
   font-size: 26px;
   margin-left: 5%; }
 
+#profileContainer {
+  margin-left: -30%;
+  margin-top: -15%; }
+
 .profile-content {
+  display: inline-block;
   margin: 2%;
   font-family: Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 15px; }
@@ -175,7 +192,22 @@ nav {
   font-weight: bold;
   font-size: 20px;
   display: block;
-  width: 100%; }
+  width: 20%;
+  border-bottom: 1px solid #F8F8F8; }
+
+.profile-stats {
+  font-family: Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 12px;
+  color: #99999C;
+  border-top: 1px solid #F8F8F8;
+  border-bottom: 1px solid #F8F8F8;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 25%; }
+
+.repo-container {
+  margin-left: 31%;
+  margin-top: 5%; }
 
 .repo-nav {
   font-family: Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
@@ -250,6 +282,18 @@ nav {
 section {
   display: none; }
 
+.stats {
+  display: inline-block;
+  margin: 2%;
+  font-family: Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: bold;
+  font-size: 30px;
+  color: #4183C4; }
+
 .tab {
   float: right;
   margin-left: 1%; }
+
+a:link {
+  text-decoration: none;
+  color: #C1C1C1; }
