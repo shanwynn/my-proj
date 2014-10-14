@@ -9,7 +9,7 @@ var seeProfile = function () {
   });
 };
 
-var setProfileInfo = function (profileData) {
+/*var setProfileInfo = function (profileData) {
   $('#name').text(profileData.login);
   $('#avatar').html("<img src='" + profileData.avatar_url + "'/>");
   $('#location').text(profileData.location);
@@ -17,7 +17,7 @@ var setProfileInfo = function (profileData) {
   $('#email').text(profileData.email);
   $('#joined').text(profileData.joined);
 };
-
+*/
 var setProfileTemplate = function (profileData) {
   var profileTemplate = _.template($("#profileTemplate").html());
   var compiledTemplate = profileTemplate(profileData);
@@ -34,13 +34,13 @@ var setProfileTemplate = function (profileData) {
 
  var setRepoTemplate = function (data) {
    _.each(data, function (repo) {
-     var repoTemplateString = $('.repo-template').html();
-     var repoTemplate=_.template(repoTemplateString);
+     var repoTemplateString = $("#repo-Template").html();
+     var repoTemplate =_.template(repoTemplateString);
      var compiledRepoTemplate = repoTemplate(repo);
-     $(".repo-container").html(compiledTemplate);
-     $(".repo-list").append(compiledRepoTemplate);
+     $("#repoList").append(compiledRepoTemplate);
    });
  };
+ seeRepo();
 
 /* var repoProfile = function () {
    $.getJSON('https://api.github.com/users/shanwynn/repos', function (data) {

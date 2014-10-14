@@ -5,6 +5,10 @@
 $font-main: Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
 $border: 1px solid #dddddd;
 
+a, a:visited {
+  text-decoration: none;
+  color: #4183C4;
+}
 .about-footer {
     float: left;
     font-family: $font-main;
@@ -88,7 +92,7 @@ footer {
   margin-bottom: 2%;
   width: 99%;
   margin-right: auto;
-  margin-left: -30%;
+  margin-left: -50%;
 }
 
 .footer-wrapper {
@@ -97,7 +101,7 @@ footer {
   margin-right: 12%;
   margin-top: 30%;
   border-top: 1px solid #F8F8F8;
-  width: 90%;
+  width: 100%;
 }
 
 .github-cat {
@@ -114,6 +118,13 @@ footer {
 #joined::before {
   margin: 5px;
   content: url('../images/clocklogo.png');
+}
+
+h2, h2:visited {
+  display: inline-block;
+  font-family: $font-main;
+  font-size: 20px;
+  text-decoration: none;
 }
 
 li {
@@ -210,13 +221,16 @@ nav {
 }
 
 #profileContainer {
-  margin-left: -30%;
-  margin-top: -15%;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: -70%;
+  margin-top: -50%;;
+  width: 100%;
 }
 
 .profile-content {
   display: inline-block;
-  margin: 2%;
+  margin-top: 2%;
   font-family: $font-main;
   font-size: 15px;
 }
@@ -239,13 +253,51 @@ nav {
   border-bottom: 1px solid #F8F8F8;
   padding-top: 15px;
   padding-bottom: 15px;
-  width: 25%;
+  width: 50%;
 }
 
-.repo-container {
-  margin-left: 31%;
+.repo-description {
+  font-family: $font-main;
+  font-size: 14px;
+  color: #99999C;
+}
+
+.profile-wrapper {
+  margin-top: -268%;
+  margin-left: 15%;
+}
+
+.repo-language, .stargazers, .branches {
+  display: inline-block;
+  margin-left: 15px;
+  font-family: $font-main;
+  font-size: 15px;
+  font-weight: bold;
+  color: #99999C;
+  padding: 5px;
+}
+
+.stargazers::before {
+  content: url('../images/star.png');
+}
+
+.branches::before {
+  content: url('../images/fork.png');
+}
+
+.repo-wrapper {
+  display:inline-block;
+  margin-left: 41%;
   margin-top: 5%;
 }
+
+.rep-list-name {
+  font-family: $font-main;
+  font-size: 10px;
+  color: #4183c4;
+  text-decoration: none;
+}
+
 .repo-nav {
   font-family: $font-main;
   font-size: 17px;
@@ -283,6 +335,28 @@ nav {
   content: url('../images/activity.png');
   padding: 5px;
 }
+
+.repo-list {
+	list-style: none;
+	margin-bottom: 0;
+}
+
+#repoList {
+  color: #4183c4;
+  text-decoration: none;
+}
+
+.repo-last-updated {
+  display: block;
+  margin-top: 8px;
+  margin-bottom: 0;
+  font-family: $font-main;
+  font-size: 13px;
+  color: #888;
+  border-bottom: 1px solid #eee;
+  padding: 10px;
+}
+
 
 .search-bar {
   display: inline-block;
@@ -331,7 +405,7 @@ section {
 
 .stats {
   display: inline-block;
-  margin: 2%;
+  margin: 0;
   font-family: $font-main;
   font-weight: bold;
   font-size: 30px;
@@ -341,9 +415,4 @@ section {
 .tab {
   float: right;
   margin-left: 1%;
-}
-
-a:link {
-  text-decoration: none;
-  color: #C1C1C1;
 }

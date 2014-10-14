@@ -42,9 +42,10 @@
         <li class="tab">All</li>
         </ul>
     </div>
-    <div class="repo-container">
-      <div class="repo-list"></div>
-      <script id="repoTemplate" type="text/template">
+    <div class="repo-wrapper">
+    <div id="repoContainer"></div>
+      <div id="repoList"></div>
+      <script id="repo-Template" type="text/template">
         <h2><a href="<%=html_url %>"><%=name %></a></h2></div>
           <ul class="stats">
             <li class="repo-language"><%=language %></li>
@@ -57,6 +58,7 @@
       </script>
     <div id="profileContainer"></div>
     <script id="profileTemplate" type="text/template">
+    <div class="profile-wrapper">
     <div id="avatar"><img src="<%= avatar_url %>"/></div>
     <div class="profile-name"></div>
     <div>
@@ -93,6 +95,7 @@
         </li>
       </a>
     </ul>
+    </div>
     </script>
     <section id="contributions">
       <div class="content"></div>
