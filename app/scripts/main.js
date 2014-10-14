@@ -9,15 +9,6 @@ var seeProfile = function () {
   });
 };
 
-/*var setProfileInfo = function (profileData) {
-  $('#name').text(profileData.login);
-  $('#avatar').html("<img src='" + profileData.avatar_url + "'/>");
-  $('#location').text(profileData.location);
-  $('#blog').html("<a href='" + profileData.blog + "'>" + profileData.blog + "</a>");
-  $('#email').text(profileData.email);
-  $('#joined').text(profileData.joined);
-};
-*/
 var setProfileTemplate = function (profileData) {
   var profileTemplate = _.template($("#profileTemplate").html());
   var compiledTemplate = profileTemplate(profileData);
@@ -42,19 +33,6 @@ var setProfileTemplate = function (profileData) {
  };
  seeRepo();
 
-/* var repoProfile = function () {
-   $.getJSON('https://api.github.com/users/shanwynn/repos', function (data) {
-     $('.info').html(JSON.stringify(data));
-     setProfileInfo(data);
-   });
- };
-
- var setProfileInfo = function (profileData) {
-
- };
-
-  repoProfile();
-*/
 
 /* target ids */
 $('li').on('click', function (event) {
